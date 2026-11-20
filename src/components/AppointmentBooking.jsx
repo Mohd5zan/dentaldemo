@@ -222,10 +222,10 @@ export default function AppointmentBooking({
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-50 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             Appointment Booking System
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             Reserve Your Consultation
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -233,8 +233,8 @@ export default function AppointmentBooking({
           </p>
 
           {/* Prominent Demo Notice */}
-          <div className="inline-flex items-center space-x-2 mt-4 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-xs text-amber-900 font-medium">
-            <Shield className="w-4 h-4 text-amber-600 shrink-0" />
+          <div className="inline-flex items-center space-x-2 mt-4 px-4 py-1.5 rounded-full bg-cream-100/70 border border-cream-300 text-xs text-baltic-900 font-medium">
+            <Shield className="w-4 h-4 text-teal shrink-0" />
             <span>Interactive Demo System: No actual appointment is booked. Form validates input and generates a sample pass.</span>
           </div>
         </div>
@@ -250,8 +250,8 @@ export default function AppointmentBooking({
                 
                 {/* Step 1: Specialty & Doctor */}
                 <div>
-                  <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-4 pb-2 border-b border-slate-100">
-                    <span className="w-5 h-5 rounded-full bg-teal-800 text-white flex items-center justify-center text-[10px]">1</span>
+                  <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-baltic-800 mb-4 pb-2 border-b border-slate-100">
+                    <span className="w-5 h-5 rounded-full bg-baltic text-white flex items-center justify-center text-[10px]">1</span>
                     <span>Select Department & Specialist</span>
                   </div>
 
@@ -269,7 +269,7 @@ export default function AppointmentBooking({
                           onChange={handleSpecialtyChange}
                           className={`w-full px-3.5 py-2.5 rounded-xl bg-ivory-50/70 border ${
                             errors.specialtyId ? 'border-rose-400 bg-rose-50/30' : 'border-slate-200'
-                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all`}
+                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-baltic transition-all`}
                         >
                           <option value="">-- Choose Clinical Specialty --</option>
                           {SPECIALTIES.map(spec => (
@@ -300,7 +300,7 @@ export default function AppointmentBooking({
                           onChange={handleDoctorChange}
                           className={`w-full px-3.5 py-2.5 rounded-xl bg-ivory-50/70 border ${
                             errors.doctorId ? 'border-rose-400 bg-rose-50/30' : 'border-slate-200'
-                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all`}
+                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-baltic transition-all`}
                         >
                           <option value="">-- Choose Specialist --</option>
                           {availableDoctors.map(doc => (
@@ -322,8 +322,8 @@ export default function AppointmentBooking({
 
                 {/* Step 2: Date & Time */}
                 <div>
-                  <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-4 pb-2 border-b border-slate-100">
-                    <span className="w-5 h-5 rounded-full bg-teal-800 text-white flex items-center justify-center text-[10px]">2</span>
+                  <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-baltic-800 mb-4 pb-2 border-b border-slate-100">
+                    <span className="w-5 h-5 rounded-full bg-baltic text-white flex items-center justify-center text-[10px]">2</span>
                     <span>Preferred Date & Slot</span>
                   </div>
 
@@ -344,7 +344,7 @@ export default function AppointmentBooking({
                           onChange={handleInputChange}
                           className={`w-full px-3.5 py-2.5 rounded-xl bg-ivory-50/70 border ${
                             errors.appointmentDate ? 'border-rose-400 bg-rose-50/30' : 'border-slate-200'
-                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all`}
+                          } text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-baltic transition-all`}
                         />
                       </div>
                       {errors.appointmentDate && (
@@ -371,7 +371,7 @@ export default function AppointmentBooking({
                               onClick={() => setFilterPeriod(p)}
                               className={`px-2 py-0.5 rounded ${
                                 filterPeriod === p
-                                  ? 'bg-teal-800 text-white font-medium'
+                                  ? 'bg-baltic text-white font-medium'
                                   : 'text-slate-500 hover:text-slate-800'
                               }`}
                             >
@@ -389,8 +389,8 @@ export default function AppointmentBooking({
                             onClick={() => handleTimeSlotSelect(slot.time)}
                             className={`py-2 px-2.5 text-xs rounded-xl font-medium border text-center transition-all ${
                               formData.appointmentTime === slot.time
-                                ? 'bg-teal-800 border-teal-800 text-white shadow-sm ring-2 ring-teal-600 ring-offset-1'
-                                : 'bg-white border-slate-200 text-slate-700 hover:border-teal-400 hover:bg-teal-50/50'
+                                ? 'bg-baltic border-baltic text-white shadow-sm ring-2 ring-teal ring-offset-1'
+                                : 'bg-white border-slate-200 text-slate-700 hover:border-teal hover:bg-baltic-50/50'
                             }`}
                           >
                             {slot.time}
@@ -521,18 +521,18 @@ export default function AppointmentBooking({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 px-6 rounded-xl bg-teal-800 hover:bg-teal-900 active:scale-[0.99] text-white font-semibold text-sm sm:text-base shadow-elevated hover:shadow-glow transition-all flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-teal-700 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full py-3.5 px-6 rounded-xl bg-baltic hover:bg-baltic-800 active:scale-[0.99] text-white font-semibold text-sm sm:text-base shadow-elevated hover:shadow-glow transition-all flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-baltic disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="w-5 h-5 animate-spin text-champagne-300" />
+                        <Loader2 className="w-5 h-5 animate-spin text-cream" />
                         <span>Verifying & Generating Appointment Pass...</span>
                       </>
                     ) : (
                       <>
-                        <Calendar className="w-4 h-4 text-champagne-300" />
+                        <Calendar className="w-4 h-4 text-cream" />
                         <span>Confirm Appointment Request (Demo)</span>
-                        <ArrowRight className="w-4 h-4 text-champagne-300" />
+                        <ArrowRight className="w-4 h-4 text-cream" />
                       </>
                     )}
                   </button>
@@ -545,9 +545,9 @@ export default function AppointmentBooking({
             </div>
 
             {/* Right Summary & Help Column */}
-            <div className="lg:col-span-4 p-6 sm:p-8 bg-ivory-100/70 flex flex-col justify-between">
+            <div className="lg:col-span-4 p-6 sm:p-8 bg-cream-50/70 flex flex-col justify-between">
               <div>
-                <h3 className="font-serif font-bold text-lg text-teal-950 mb-4 pb-2 border-b border-slate-200">
+                <h3 className="font-heading font-bold text-lg text-baltic-950 mb-4 pb-2 border-b border-slate-200">
                   Appointment Overview
                 </h3>
 
@@ -557,7 +557,7 @@ export default function AppointmentBooking({
                     <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
                       Specialty
                     </span>
-                    <div className="text-xs font-semibold text-teal-900">
+                    <div className="text-xs font-semibold text-baltic-950">
                       {formData.specialtyId 
                         ? SPECIALTIES.find(s => s.id === formData.specialtyId)?.name 
                         : 'Select Specialty'}
@@ -568,7 +568,7 @@ export default function AppointmentBooking({
                     <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
                       Consultant
                     </span>
-                    <div className="text-xs font-semibold text-teal-900">
+                    <div className="text-xs font-semibold text-baltic-950">
                       {formData.doctorId 
                         ? DOCTORS.find(d => d.id === formData.doctorId)?.name 
                         : 'Select Doctor'}
@@ -598,23 +598,23 @@ export default function AppointmentBooking({
                 {/* Clinical Guarantee List */}
                 <div className="space-y-3 text-xs text-slate-600 mb-6">
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-verdigris shrink-0 mt-0.5" />
                     <span>Instant confirmation token for reception check-in.</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-verdigris shrink-0 mt-0.5" />
                     <span>Free reschedule up to 2 hours prior to consultation.</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-verdigris shrink-0 mt-0.5" />
                     <span>Complimentary parking and wheelchair assistance.</span>
                   </div>
                 </div>
               </div>
 
               {/* Assistance Box */}
-              <div className="p-4 rounded-xl bg-teal-900 text-white space-y-2">
-                <div className="text-xs font-bold text-champagne-300 uppercase tracking-wider">
+              <div className="p-4 rounded-xl bg-[#033a52] text-white space-y-2">
+                <div className="text-xs font-bold text-cream uppercase tracking-wider">
                   Prefer Booking Over Phone?
                 </div>
                 <p className="text-[11px] text-teal-200 leading-normal">
@@ -622,9 +622,9 @@ export default function AppointmentBooking({
                 </p>
                 <a
                   href={`tel:${CLINIC_INFO.primaryPhone.replace(/\s+/g, '')}`}
-                  className="inline-flex items-center space-x-1.5 text-xs font-bold text-white hover:text-champagne-300 transition-colors pt-1"
+                  className="inline-flex items-center space-x-1.5 text-xs font-bold text-cream hover:text-white transition-colors pt-1"
                 >
-                  <Phone className="w-3.5 h-3.5 text-champagne-400" />
+                  <Phone className="w-3.5 h-3.5 text-cream" />
                   <span>Call {CLINIC_INFO.primaryPhone}</span>
                 </a>
               </div>

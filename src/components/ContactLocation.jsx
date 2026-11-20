@@ -69,10 +69,10 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-50 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             Location & Contact
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             Visit Our Clinic in Jubilee Hills
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -89,11 +89,11 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
             {/* Address & Navigation Card */}
             <div className="p-6 rounded-3xl bg-ivory-50 border border-slate-200/90 shadow-soft">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-2xl bg-teal-800 text-champagne-300 flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-baltic text-cream flex items-center justify-center shrink-0 shadow-sm">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-lg text-teal-950 mb-1">
+                  <h3 className="font-heading font-bold text-lg text-baltic-950 mb-1">
                     Clinic Location
                   </h3>
                   <p className="text-sm text-slate-700 leading-relaxed font-medium">
@@ -105,9 +105,9 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
 
                   <button
                     onClick={openGoogleMapsDirections}
-                    className="inline-flex items-center space-x-1.5 mt-3 text-xs font-bold text-teal-800 hover:text-teal-950"
+                    className="inline-flex items-center space-x-1.5 mt-3 text-xs font-bold text-baltic hover:text-baltic-900"
                   >
-                    <Navigation className="w-3.5 h-3.5 text-teal-700" />
+                    <Navigation className="w-3.5 h-3.5 text-teal" />
                     <span>Get Directions via Google Maps</span>
                     <ExternalLink className="w-3 h-3 ml-0.5" />
                   </button>
@@ -117,13 +117,13 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
 
             {/* Direct Contact Numbers */}
             <div className="p-6 rounded-3xl bg-ivory-50 border border-slate-200/90 shadow-soft space-y-4">
-              <h3 className="font-serif font-bold text-lg text-teal-950 border-b border-slate-200 pb-2">
+              <h3 className="font-heading font-bold text-lg text-baltic-950 border-b border-slate-200 pb-2">
                 Direct Communications
               </h3>
 
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center space-x-3">
-                  <div className="w-9 h-9 rounded-xl bg-teal-100/70 text-teal-800 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-xl bg-baltic-50 text-baltic flex items-center justify-center">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
@@ -133,7 +133,7 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
                 </div>
                 <a
                   href={`tel:${CLINIC_INFO.primaryPhone.replace(/\s+/g, '')}`}
-                  className="px-3 py-1 rounded-lg bg-teal-800 text-white text-xs font-semibold hover:bg-teal-900 transition-colors"
+                  className="px-3 py-1 rounded-lg bg-baltic text-white text-xs font-semibold hover:bg-baltic-800 transition-colors"
                 >
                   Call
                 </a>
@@ -159,7 +159,7 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
 
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center space-x-3">
-                  <div className="w-9 h-9 rounded-xl bg-emerald-100/70 text-emerald-800 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-xl bg-verdigris-100/70 text-verdigris-800 flex items-center justify-center">
                     <MessageSquare className="w-4 h-4" />
                   </div>
                   <div>
@@ -169,19 +169,19 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
                 </div>
                 <button
                   onClick={onOpenWhatsApp}
-                  className="px-3 py-1 rounded-lg bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition-colors"
+                  className="px-3 py-1 rounded-lg bg-verdigris text-white text-xs font-semibold hover:bg-verdigris-600 transition-colors"
                 >
                   Chat
                 </button>
               </div>
 
               <div className="flex items-center space-x-3 text-sm pt-1">
-                <div className="w-9 h-9 rounded-xl bg-teal-100/70 text-teal-800 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-baltic-50 text-baltic flex items-center justify-center">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-[11px] text-slate-500 font-medium">Official Inquiry Email</div>
-                  <a href={`mailto:${CLINIC_INFO.email}`} className="font-semibold text-teal-800 hover:underline">
+                  <a href={`mailto:${CLINIC_INFO.email}`} className="font-semibold text-baltic hover:underline">
                     {CLINIC_INFO.email}
                   </a>
                 </div>
@@ -189,25 +189,25 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
             </div>
 
             {/* Operating Hours Card */}
-            <div className="p-6 rounded-3xl bg-teal-950 text-white shadow-soft">
+            <div className="p-6 rounded-3xl bg-[#022332] text-white shadow-soft">
               <div className="flex items-center space-x-3 mb-4">
-                <Clock className="w-5 h-5 text-champagne-300" />
-                <h3 className="font-serif font-bold text-lg text-champagne-300">
+                <Clock className="w-5 h-5 text-cream" />
+                <h3 className="font-heading font-bold text-lg text-cream">
                   Operating Hours
                 </h3>
               </div>
               <div className="space-y-2 text-xs sm:text-sm">
-                <div className="flex justify-between border-b border-teal-900 pb-2">
+                <div className="flex justify-between border-b border-baltic-900 pb-2">
                   <span className="text-slate-300">Monday – Saturday:</span>
                   <span className="font-semibold text-white">8:00 AM – 8:30 PM</span>
                 </div>
-                <div className="flex justify-between border-b border-teal-900 pb-2">
+                <div className="flex justify-between border-b border-baltic-900 pb-2">
                   <span className="text-slate-300">Sunday:</span>
                   <span className="font-semibold text-white">9:00 AM – 2:00 PM</span>
                 </div>
                 <div className="flex justify-between pt-1">
                   <span className="text-slate-300">Emergency Triage:</span>
-                  <span className="font-semibold text-emerald-400">24/7 Telephone Triage</span>
+                  <span className="font-semibold text-mint">24/7 Telephone Triage</span>
                 </div>
               </div>
             </div>
@@ -230,11 +230,11 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
                 
                 {/* Floating overlay tag */}
                 <div className="absolute top-4 left-4 p-3 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-center space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-teal-800 text-white flex items-center justify-center">
-                    <MapPin className="w-4 h-4 text-champagne-300" />
+                  <div className="w-8 h-8 rounded-full bg-baltic text-white flex items-center justify-center">
+                    <MapPin className="w-4 h-4 text-cream" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-teal-950">Aurelia Care Clinic</div>
+                    <div className="text-xs font-bold text-baltic-950">Aurelia Care Clinic</div>
                     <div className="text-[10px] text-slate-500">Road No. 36, Jubilee Hills</div>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
             {/* General Contact Enquiry Form */}
             <div className="p-6 sm:p-8 rounded-3xl bg-ivory-50 border border-slate-200/90 shadow-soft">
               <div className="mb-6">
-                <h3 className="font-serif font-bold text-xl text-teal-950">
+                <h3 className="font-heading font-bold text-xl text-baltic-950">
                   Send a General Message
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -253,9 +253,9 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
               </div>
 
               {submitted ? (
-                <div className="p-6 rounded-2xl bg-teal-50 border border-teal-200 text-center space-y-3">
-                  <CheckCircle2 className="w-10 h-10 text-teal-700 mx-auto" />
-                  <h4 className="font-serif font-bold text-lg text-teal-950">Message Sent Successfully (Demo)</h4>
+                <div className="p-6 rounded-2xl bg-baltic-50 border border-baltic-200 text-center space-y-3">
+                  <CheckCircle2 className="w-10 h-10 text-baltic mx-auto" />
+                  <h4 className="font-heading font-bold text-lg text-baltic-950">Message Sent Successfully (Demo)</h4>
                   <p className="text-xs text-slate-600 max-w-md mx-auto">
                     Thank you for your message. In this live demonstration website, no personal medical data is stored on backend servers.
                   </p>
@@ -365,7 +365,7 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
                       value={enquiryForm.message}
                       onChange={handleInputChange}
                       placeholder="Write your note or question here..."
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-700 resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-baltic resize-none"
                     />
                     {formErrors.message && (
                       <p className="text-[11px] text-rose-500 mt-1">{formErrors.message}</p>
@@ -375,13 +375,13 @@ export default function ContactLocation({ onOpenWhatsApp, onShowToast }) {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3 px-6 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-semibold text-xs sm:text-sm shadow transition-all flex items-center justify-center space-x-2"
+                    className="w-full py-3 px-6 rounded-xl bg-baltic hover:bg-baltic-800 text-white font-semibold text-xs sm:text-sm shadow transition-all flex items-center justify-center space-x-2"
                   >
                     {isSubmitting ? (
                       <span>Sending inquiry note...</span>
                     ) : (
                       <>
-                        <Send className="w-4 h-4 text-champagne-300" />
+                        <Send className="w-4 h-4 text-cream" />
                         <span>Send Message (Demo)</span>
                       </>
                     )}

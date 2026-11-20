@@ -28,18 +28,18 @@ export default function Specialties({ onSelectSpecialty, onBookAppointment }) {
   return (
     <section id="specialties" className="py-20 sm:py-28 bg-ivory-50 relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-72 h-72 bg-teal-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-sage-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-0 w-72 h-72 bg-baltic-100/35 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-0 w-80 h-80 bg-cream-100/50 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-100/70 border border-teal-200 uppercase mb-3">
+            <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
               Medical Specialties
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
               Comprehensive Outpatient Disciplines
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -55,7 +55,7 @@ export default function Specialties({ onSelectSpecialty, onBookAppointment }) {
               placeholder="Search symptom or specialty..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-700 focus:border-transparent transition-all shadow-sm"
+              className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-baltic focus:border-transparent transition-all shadow-sm"
             />
             {searchTerm && (
               <button 
@@ -75,20 +75,20 @@ export default function Specialties({ onSelectSpecialty, onBookAppointment }) {
             return (
               <div
                 key={specialty.id}
-                className="group relative bg-white rounded-2xl p-6 border border-slate-200/90 shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="group relative bg-white rounded-2xl p-6 border border-slate-200/90 shadow-soft hover:shadow-card hover:-translate-y-1 hover:border-verdigris-300 transition-all duration-300 flex flex-col justify-between"
               >
                 {/* Top icon and badge */}
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-100 text-teal-800 flex items-center justify-center group-hover:bg-teal-800 group-hover:text-champagne-300 transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-2xl bg-baltic-50 border border-baltic-100 text-baltic flex items-center justify-center group-hover:bg-baltic group-hover:text-cream transition-colors duration-300 shadow-sm">
                       <IconComponent className="w-6 h-6" />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-teal-700 bg-teal-50/80 px-2 py-0.5 rounded-md border border-teal-100">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-teal bg-teal-50 px-2 py-0.5 rounded-md border border-teal-100">
                       {specialty.doctorsCount} Specialists
                     </span>
                   </div>
 
-                  <h3 className="font-serif font-bold text-xl text-teal-950 mb-2 group-hover:text-teal-800 transition-colors">
+                  <h3 className="font-heading font-bold text-xl text-baltic-950 mb-2 group-hover:text-baltic transition-colors">
                     {specialty.name}
                   </h3>
 
@@ -107,40 +107,25 @@ export default function Specialties({ onSelectSpecialty, onBookAppointment }) {
                   <div className="flex items-center justify-between">
                     <button
                       onClick={() => onSelectSpecialty(specialty)}
-                      className="inline-flex items-center space-x-1.5 text-xs font-bold text-teal-800 hover:text-teal-950 group/btn"
+                      className="inline-flex items-center space-x-1.5 text-xs font-bold text-baltic hover:text-baltic-900 group/btn"
                     >
-                      <span>Department Details</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                      <span>Explore Scope</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
                     </button>
 
                     <button
                       onClick={() => onBookAppointment(specialty.id)}
-                      className="px-2.5 py-1 rounded-lg bg-teal-50 text-teal-800 hover:bg-teal-800 hover:text-white text-xs font-semibold transition-colors duration-200"
-                      title={`Book in ${specialty.name}`}
+                      className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-baltic-50 text-baltic hover:bg-baltic hover:text-cream transition-colors"
                     >
                       Book
                     </button>
                   </div>
                 </div>
+
               </div>
             );
           })}
         </div>
-
-        {/* If search yields no results */}
-        {filteredSpecialties.length === 0 && (
-          <div className="text-center py-12 bg-white rounded-2xl border border-slate-200">
-            <p className="text-slate-600 text-sm">
-              No specialties matched your search term "{searchTerm}".
-            </p>
-            <button
-              onClick={() => setSearchTerm('')}
-              className="mt-3 text-xs font-semibold text-teal-800 underline"
-            >
-              Reset Search Filter
-            </button>
-          </div>
-        )}
 
       </div>
     </section>

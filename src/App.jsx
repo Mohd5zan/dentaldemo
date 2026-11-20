@@ -77,7 +77,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-ivory-50 text-slate-800 antialiased selection:bg-teal-800 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-ivory-50 text-slate-800 antialiased selection:bg-baltic-700 selection:text-white">
       {/* Toast Alert */}
       <Toast toast={toast} onClose={() => setToast(null)} />
 

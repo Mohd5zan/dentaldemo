@@ -28,17 +28,17 @@ export default function About({ onOpenBooking }) {
 
   return (
     <section id="about" className="py-20 sm:py-28 bg-white relative overflow-hidden">
-      {/* Decorative background element */}
-      <div className="absolute -top-40 right-0 w-96 h-96 bg-sage-50 rounded-full blur-3xl -z-10" />
+      {/* Decorative background element in soft cream */}
+      <div className="absolute -top-40 right-0 w-96 h-96 bg-cream-100/50 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-50 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             About Aurelia Care Clinic
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             A Healthcare Sanctuary Built Around You
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -72,8 +72,8 @@ export default function About({ onOpenBooking }) {
               </div>
 
               {/* Experience badge */}
-              <div className="absolute top-6 left-6 p-3.5 rounded-2xl bg-teal-950/90 backdrop-blur-md text-white border border-teal-700/60 shadow-lg">
-                <div className="text-2xl font-serif font-bold text-champagne-300">Hyderabad</div>
+              <div className="absolute top-6 left-6 p-3.5 rounded-2xl bg-[#022332]/90 backdrop-blur-md text-white border border-baltic-700/60 shadow-lg">
+                <div className="text-2xl font-heading font-bold text-cream">Hyderabad</div>
                 <div className="text-[11px] text-teal-200">Jubilee Hills Medical Center</div>
               </div>
 
@@ -84,7 +84,7 @@ export default function About({ onOpenBooking }) {
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
               <p>
-                Too often, outpatient healthcare feels hurried, fragmented, and stressful. At <strong className="text-teal-950 font-semibold">Aurelia Care Clinic</strong>, we set out to create a serene environment where medical precision meets genuine human connection.
+                Too often, outpatient healthcare feels hurried, fragmented, and stressful. At <strong className="text-baltic-950 font-semibold">Aurelia Care Clinic</strong>, we set out to create a serene environment where medical precision meets genuine human connection.
               </p>
               <p>
                 From routine pediatric wellness visits to specialized cardiovascular risk assessments, our multispecialty teams collaborate seamlessly under one roof. Our appointment scheduling is intentionally structured to preserve time for thorough doctor-patient dialogue.
@@ -98,12 +98,12 @@ export default function About({ onOpenBooking }) {
                 return (
                   <div 
                     key={idx}
-                    className="p-4 rounded-2xl bg-ivory-50 border border-slate-200/80 hover:border-teal-300 transition-colors"
+                    className="p-4 rounded-2xl bg-ivory-50 border border-slate-200/80 hover:border-verdigris-300 transition-colors"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-teal-100/80 text-teal-800 flex items-center justify-center mb-2.5">
+                    <div className="w-9 h-9 rounded-xl bg-baltic-50 text-baltic flex items-center justify-center mb-2.5">
                       <IconComponent className="w-5 h-5" />
                     </div>
-                    <h3 className="font-serif font-bold text-base text-teal-950 mb-1">
+                    <h3 className="font-heading font-bold text-base text-baltic-950 mb-1">
                       {pillar.title}
                     </h3>
                     <p className="text-xs text-slate-600 leading-normal">
@@ -115,18 +115,18 @@ export default function About({ onOpenBooking }) {
             </div>
 
             {/* Quote / Philosophy Box */}
-            <div className="p-4 rounded-2xl bg-gradient-to-r from-teal-900 to-teal-950 text-white flex items-center justify-between gap-4">
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-[#033a52] to-[#022332] text-white flex items-center justify-between gap-4 shadow-soft">
               <div>
-                <p className="font-serif italic text-xs sm:text-sm text-champagne-200">
+                <p className="font-normal italic text-xs sm:text-sm text-cream">
                   "Thoughtful healthcare begins by listening with patience and diagnosing with uncompromising precision."
                 </p>
-                <span className="block text-[11px] text-teal-300 mt-1 uppercase tracking-wider">
+                <span className="block text-[11px] text-teal-200 mt-1 uppercase tracking-wider font-medium">
                   — The Aurelia Care Clinical Philosophy
                 </span>
               </div>
               <button
                 onClick={onOpenBooking}
-                className="shrink-0 px-4 py-2 rounded-xl bg-champagne-400 hover:bg-champagne-300 text-teal-950 font-bold text-xs transition-colors"
+                className="shrink-0 px-4 py-2 rounded-xl bg-cream hover:bg-cream-400 text-baltic-950 font-bold text-xs transition-colors shadow-sm"
               >
                 Schedule Visit
               </button>

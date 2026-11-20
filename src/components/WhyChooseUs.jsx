@@ -17,17 +17,17 @@ const iconMap = {
 export default function WhyChooseUs({ onOpenBooking }) {
   return (
     <section id="why-us" className="py-20 sm:py-28 bg-ivory-50 relative overflow-hidden">
-      {/* Decorative background aura */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-sage-200/20 blur-3xl rounded-full -z-10" />
+      {/* Decorative background aura in Cream and Mint */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cream-200/35 blur-3xl rounded-full -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-100/70 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             The Aurelia Difference
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             Why Patients Choose Aurelia Care
           </h2>
           <p className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -42,14 +42,14 @@ export default function WhyChooseUs({ onOpenBooking }) {
             return (
               <div
                 key={idx}
-                className="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-teal-300 transition-all duration-300 flex flex-col justify-between group"
+                className="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-soft hover:shadow-card hover:border-verdigris-300 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-100 text-teal-800 flex items-center justify-center mb-6 group-hover:bg-teal-800 group-hover:text-champagne-300 transition-colors duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-baltic-50 border border-baltic-100 text-baltic flex items-center justify-center mb-6 group-hover:bg-baltic group-hover:text-cream transition-colors duration-300">
                     <IconComponent className="w-6 h-6" />
                   </div>
 
-                  <h3 className="font-serif font-bold text-xl text-teal-950 mb-3 group-hover:text-teal-800 transition-colors">
+                  <h3 className="font-heading font-bold text-xl text-baltic-950 mb-3 group-hover:text-baltic transition-colors">
                     {item.title}
                   </h3>
 
@@ -58,8 +58,8 @@ export default function WhyChooseUs({ onOpenBooking }) {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center space-x-2 text-xs font-semibold text-teal-800">
-                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center space-x-2 text-xs font-semibold text-baltic-800">
+                  <CheckCircle2 className="w-4 h-4 text-verdigris" />
                   <span>Clinical Standard</span>
                 </div>
               </div>
@@ -67,10 +67,10 @@ export default function WhyChooseUs({ onOpenBooking }) {
           })}
         </div>
 
-        {/* Banner at bottom of section */}
-        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-teal-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-elevated">
+        {/* Banner at bottom of section in Baltic Blue and Cream */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-[#022332] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-elevated border border-baltic-900">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="font-serif font-bold text-xl sm:text-2xl text-champagne-300">
+            <h4 className="font-heading font-bold text-xl sm:text-2xl text-cream">
               Ready for a More Thoughtful Healthcare Experience?
             </h4>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
@@ -80,7 +80,7 @@ export default function WhyChooseUs({ onOpenBooking }) {
 
           <button
             onClick={onOpenBooking}
-            className="shrink-0 px-6 py-3 rounded-xl bg-champagne-400 hover:bg-champagne-300 text-teal-950 font-bold text-sm shadow transition-colors"
+            className="shrink-0 px-6 py-3 rounded-xl bg-cream hover:bg-cream-400 text-baltic-950 font-bold text-sm shadow transition-colors"
           >
             Request Appointment Now
           </button>

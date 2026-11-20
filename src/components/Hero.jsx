@@ -12,11 +12,11 @@ export default function Hero({ onOpenBooking }) {
   return (
     <section 
       id="hero" 
-      className="relative pt-28 sm:pt-36 pb-16 sm:pb-24 overflow-hidden bg-gradient-to-b from-ivory-100 via-ivory-50 to-white"
+      className="relative pt-28 sm:pt-36 pb-16 sm:pb-24 overflow-hidden bg-gradient-to-b from-cream-100/60 via-ivory-50 to-white"
     >
-      {/* Ambient background glow & subtle organic elements */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-radial from-teal-200/25 via-sage-100/30 to-transparent blur-3xl pointer-events-none -z-10" />
-      <div className="absolute top-40 right-[-100px] w-80 h-80 rounded-full bg-champagne-200/20 blur-2xl pointer-events-none -z-10" />
+      {/* Ambient background glow & subtle organic elements in Baltic Blue, Teal and Cream */}
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-radial from-baltic-200/25 via-teal-100/30 to-cream-200/20 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-40 right-[-100px] w-80 h-80 rounded-full bg-cream-200/40 blur-2xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -24,40 +24,40 @@ export default function Hero({ onOpenBooking }) {
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Trust Pill */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-sm">
-              <span className="flex h-2 w-2 rounded-full bg-teal-600 animate-ping" />
-              <span className="text-xs font-semibold text-teal-900 tracking-wide">
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-baltic-50/90 border border-baltic-200/80 shadow-sm">
+              <span className="flex h-2 w-2 rounded-full bg-mint animate-ping" />
+              <span className="text-xs font-semibold text-baltic-950 tracking-wide">
                 Jubilee Hills, Hyderabad • Multispecialty Care
               </span>
             </div>
 
             {/* Primary Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-teal-950 tracking-tight leading-[1.15]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-baltic-950 tracking-tight leading-[1.15]">
               Your Health Deserves{' '}
-              <span className="italic font-normal text-teal-800 underline decoration-champagne-400 decoration-wavy decoration-1 underline-offset-8">
+              <span className="font-semibold text-teal underline decoration-mint decoration-2 underline-offset-8">
                 Thoughtful Care.
               </span>
             </h1>
 
             {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
               Comprehensive healthcare, experienced professionals and a patient-first approach — all under one roof in Hyderabad.
             </p>
 
             {/* Key Trust Pillars */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 text-xs sm:text-sm text-slate-700 font-medium">
               <div className="flex items-center space-x-1.5">
-                <CheckCircle2 className="w-4 h-4 text-teal-700" />
+                <CheckCircle2 className="w-4 h-4 text-verdigris" />
                 <span>8 Outpatient Specialties</span>
               </div>
               <span className="hidden sm:inline text-slate-300">•</span>
               <div className="flex items-center space-x-1.5">
-                <CheckCircle2 className="w-4 h-4 text-teal-700" />
+                <CheckCircle2 className="w-4 h-4 text-verdigris" />
                 <span>Zero-Rush Consultations</span>
               </div>
               <span className="hidden sm:inline text-slate-300">•</span>
               <div className="flex items-center space-x-1.5">
-                <CheckCircle2 className="w-4 h-4 text-teal-700" />
+                <CheckCircle2 className="w-4 h-4 text-verdigris" />
                 <span>Same-Day On-Site Diagnostics</span>
               </div>
             </div>
@@ -66,16 +66,16 @@ export default function Hero({ onOpenBooking }) {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-3">
               <button
                 onClick={onOpenBooking}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-semibold text-sm sm:text-base shadow-elevated hover:shadow-glow transition-all duration-300 flex items-center justify-center space-x-2.5 group"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-baltic hover:bg-baltic-800 text-white font-semibold text-sm sm:text-base shadow-elevated hover:shadow-glow transition-all duration-300 flex items-center justify-center space-x-2.5 group"
               >
-                <Calendar className="w-4 h-4 text-champagne-300 group-hover:scale-110 transition-transform" />
+                <Calendar className="w-4 h-4 text-cream group-hover:scale-110 transition-transform" />
                 <span>Book an Appointment</span>
-                <ArrowRight className="w-4 h-4 text-champagne-300 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-cream group-hover:translate-x-1 transition-transform" />
               </button>
 
               <button
                 onClick={scrollToSpecialties}
-                className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-teal-800/40 bg-white/80 hover:bg-teal-50/60 text-teal-900 font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-baltic-700/30 bg-white/90 hover:bg-baltic-50 text-baltic-950 font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center space-x-2 shadow-sm"
               >
                 <span>Explore Our Services</span>
               </button>
@@ -93,11 +93,12 @@ export default function Hero({ onOpenBooking }) {
               </div>
               <div className="col-span-2 sm:col-span-1">
                 <span className="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Emergency Line</span>
-                <a href={`tel:${CLINIC_INFO.emergencyPhone.replace(/\s+/g, '')}`} className="text-xs sm:text-sm font-semibold text-teal-800 hover:underline">
+                <a href={`tel:${CLINIC_INFO.emergencyPhone.replace(/\s+/g, '')}`} className="text-xs sm:text-sm font-semibold text-baltic hover:underline">
                   {CLINIC_INFO.emergencyPhone}
                 </a>
               </div>
             </div>
+
           </div>
 
           {/* Right Hero Visual Stack */}
@@ -112,27 +113,27 @@ export default function Hero({ onOpenBooking }) {
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 />
                 
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#022332]/75 via-transparent to-transparent" />
 
                 {/* Bottom Overlay Pill */}
                 <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-100 shadow-lg flex items-center justify-between">
                   <div>
-                    <div className="text-[11px] font-bold text-teal-900 uppercase tracking-wider">
+                    <div className="text-[11px] font-bold text-baltic-950 uppercase tracking-wider">
                       Patient Experience First
                     </div>
                     <div className="text-xs text-slate-600">
                       Unrushed appointments & personal attention
                     </div>
                   </div>
-                  <div className="w-9 h-9 rounded-full bg-teal-50 flex items-center justify-center shrink-0 border border-teal-200 text-teal-800">
-                    <HeartPulse className="w-5 h-5 text-teal-700" />
+                  <div className="w-9 h-9 rounded-full bg-cream/70 flex items-center justify-center shrink-0 border border-cream-400/50 text-baltic-800">
+                    <HeartPulse className="w-5 h-5 text-teal" />
                   </div>
                 </div>
               </div>
 
               {/* Floating Top Badge: Hyderabad Multispecialty */}
               <div className="absolute -top-4 -left-4 sm:-left-6 z-20 p-3 rounded-2xl bg-white shadow-elevated border border-slate-100 flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-xl bg-sage-100 flex items-center justify-center text-sage-700">
+                <div className="w-10 h-10 rounded-xl bg-verdigris-50 flex items-center justify-center text-verdigris-700">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
@@ -142,8 +143,8 @@ export default function Hero({ onOpenBooking }) {
               </div>
 
               {/* Floating Right Badge: Scheduled Appointments */}
-              <div className="absolute -bottom-4 -right-4 sm:-right-6 z-20 p-3 rounded-2xl bg-teal-900 text-white shadow-elevated border border-teal-700/60 flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-800 flex items-center justify-center text-champagne-300">
+              <div className="absolute -bottom-4 -right-4 sm:-right-6 z-20 p-3 rounded-2xl bg-[#033a52] text-white shadow-elevated border border-baltic-700/60 flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-xl bg-baltic flex items-center justify-center text-cream">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
@@ -153,7 +154,7 @@ export default function Hero({ onOpenBooking }) {
               </div>
 
               {/* Decorative Subtle Backdrop Accent */}
-              <div className="absolute -bottom-6 -left-6 w-full h-full rounded-3xl border-2 border-dashed border-teal-300/40 -z-10 hidden sm:block" />
+              <div className="absolute -bottom-6 -left-6 w-full h-full rounded-3xl border-2 border-dashed border-baltic-300/40 -z-10 hidden sm:block" />
             </div>
           </div>
 

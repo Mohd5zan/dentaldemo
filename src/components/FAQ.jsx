@@ -21,10 +21,10 @@ export default function FAQ({ onOpenBooking }) {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-100/70 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             Help & Guidance
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             Frequently Asked Questions
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -39,7 +39,7 @@ export default function FAQ({ onOpenBooking }) {
               placeholder="Search frequently asked questions..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-700 shadow-sm"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-baltic shadow-sm"
             />
           </div>
         </div>
@@ -58,11 +58,11 @@ export default function FAQ({ onOpenBooking }) {
                   className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif font-bold text-base sm:text-lg text-teal-950">
+                  <span className="font-heading font-bold text-base sm:text-lg text-baltic-950">
                     {faq.question}
                   </span>
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                    isOpen ? 'bg-teal-800 text-white rotate-180' : 'bg-teal-50 text-teal-800'
+                    isOpen ? 'bg-baltic text-white rotate-180' : 'bg-baltic-50 text-baltic'
                   }`}>
                     <ChevronDown className="w-4 h-4" />
                   </div>
@@ -86,7 +86,7 @@ export default function FAQ({ onOpenBooking }) {
             </p>
             <button
               onClick={() => setSearchQuery('')}
-              className="mt-2 text-xs font-semibold text-teal-800 underline"
+              className="mt-2 text-xs font-semibold text-baltic underline"
             >
               Clear Search
             </button>
@@ -95,7 +95,7 @@ export default function FAQ({ onOpenBooking }) {
 
         {/* Help footer */}
         <div className="mt-12 text-center p-6 rounded-2xl bg-white border border-slate-200/80 shadow-soft">
-          <h4 className="font-serif font-bold text-base text-teal-950 mb-1">
+          <h4 className="font-heading font-bold text-base text-baltic-950 mb-1">
             Have a question not addressed here?
           </h4>
           <p className="text-xs text-slate-500 mb-4">
@@ -103,7 +103,7 @@ export default function FAQ({ onOpenBooking }) {
           </p>
           <button
             onClick={onOpenBooking}
-            className="px-5 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white text-xs font-semibold shadow-sm transition-colors"
+            className="px-5 py-2.5 rounded-xl bg-baltic hover:bg-baltic-800 text-white text-xs font-semibold shadow-sm transition-colors"
           >
             Connect With Clinic Desk
           </button>

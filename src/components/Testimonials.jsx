@@ -9,10 +9,10 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-teal-800 bg-teal-50 border border-teal-200 uppercase mb-3">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-baltic-800 bg-baltic-50 border border-baltic-200 uppercase mb-3">
             Patient Perspectives
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-teal-950 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-baltic-950 tracking-tight">
             Voices of Restored Wellness
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -20,8 +20,8 @@ export default function Testimonials() {
           </p>
 
           {/* Demonstration Notice Pill */}
-          <div className="inline-flex items-center space-x-2 mt-4 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/90 text-xs text-amber-900 font-medium">
-            <Shield className="w-4 h-4 text-amber-600 shrink-0" />
+          <div className="inline-flex items-center space-x-2 mt-4 px-3.5 py-1.5 rounded-full bg-cream-100/70 border border-cream-300 text-xs text-baltic-900 font-medium">
+            <Shield className="w-4 h-4 text-teal shrink-0" />
             <span>Demonstration Notice: The testimonials below are illustrative examples created to display frontend layout.</span>
           </div>
         </div>
@@ -31,11 +31,11 @@ export default function Testimonials() {
           {TESTIMONIALS.map((item) => (
             <div
               key={item.id}
-              className="p-8 rounded-3xl bg-ivory-50/70 border border-slate-200/90 shadow-soft flex flex-col justify-between relative"
+              className="p-8 rounded-3xl bg-ivory-50/70 border border-slate-200/90 shadow-soft hover:shadow-card hover:border-verdigris-300 transition-all duration-300 flex flex-col justify-between relative"
             >
               <div className="relative">
                 {/* Decorative quote mark */}
-                <Quote className="w-10 h-10 text-teal-200/70 absolute -top-4 -left-2 -z-0" />
+                <Quote className="w-10 h-10 text-baltic-200/50 absolute -top-4 -left-2 -z-0" />
 
                 {/* Rating stars */}
                 <div className="flex items-center space-x-1 text-amber-400 mb-4 relative z-10">
@@ -52,10 +52,10 @@ export default function Testimonials() {
               {/* Author Info */}
               <div className="pt-4 border-t border-slate-200/80 flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif font-bold text-base text-teal-950">
+                  <h3 className="font-heading font-bold text-base text-baltic-950">
                     {item.author}
                   </h3>
-                  <div className="text-xs text-teal-700 font-medium">
+                  <div className="text-xs text-teal font-medium">
                     {item.designation}
                   </div>
                   <div className="text-[11px] text-slate-500">
